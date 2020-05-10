@@ -1,0 +1,14 @@
+## Hello World
+
+源文件：HelloWorld.java
+class HelloWorld{
+   public static void main(String[] args) {
+     system.out.println ("Hello World"); //分号！
+   }
+}
+
+Compile (命令提示符窗口)
+ javac HelloWorld.java //文件类型名.java
+ 
+Run:
+ java HelloWorld
