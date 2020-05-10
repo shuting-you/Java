@@ -1,0 +1,3 @@
+the version of JAVA I used is: JAVA 13.0.1
+download and install JAVA in D:\jdk13
+In order to compile .java file in any route, we need to **set 'path' enviroment variable**
