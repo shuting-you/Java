@@ -1,3 +1,18 @@
 the version of JAVA I used is: JAVA 13.0.1
 download and install JAVA in D:\jdk13
-In order to compile .java file in any route, we need to **set 'path' enviroment variable**
+In order to compile .java file in any route, we need to set 'path' 环境变量
+
+### How to set 'path' 环境变量
+右键‘这台电脑’ >> 属性 >> 高级系统设置 >> 左上‘高级’ >> 右下‘环境变量’ >> 系统变量内'新建' > 变量名：JAVA_HOME
+变量值：D:\jdk13      ->此为java安装地址
+>> 系统变量内对 path 编辑：后加 ;%JAVA_HOME%\bin >> 完成
+
+不同版本的java在配置环境变量时略有不同
+一般需重启才算完全配置完成
+
+##如何判断配置成功？
+windows+R >> cmd >>输入：java -version
+输出 版本号 即为配置成功
+
+%%两个月以前成功配置并正常使用，但今天使用发现在其他盘下无法找到文件，还是需要手动进入相对应路径
+%%重新配置并重启后还是没成功，未进入下一步故不在此多浪费时间，将这个问题留档  wait for solutions
