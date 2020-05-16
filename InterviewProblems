@@ -16,3 +16,9 @@ class Interview1{
 
 Ans:
 z = 46
+
+2.
+2 * 8 最高效的实现方式：
+
+Ans:
+2<<3 or 8<<2
