@@ -195,7 +195,8 @@ class RectangleTest1 {
 }
    
 6.*******************************************************************
-快速排序的排序思想和代码
+快速排序的排序思想(代码不是必须掌握的）
+冒泡排序要会手写
 
 
 /**
@@ -246,6 +247,28 @@ public class QuickSort {
 		System.out.println("排序之后：\n" + java.util.Arrays.toString(data));
 	}
 }
+//冒泡排序
+import java.util.Arrays;
 
+public class BubbleSort {
+	public static void main(String[] args) {
+		//进行从小到大排序
+		int[] arr = new int[] {45, 25, 61, 2, 58, 99, 45, 3, 45};
+		for(int i = 0;i < arr.length - 1;i++ ) {
+			//对n个数排序，则需要进行n-1趟
+			for(int j = 0;j < arr.length - 1 -i;j++) {
+				//每一趟比上一趟少比较一次
+				if(arr[j] > arr[j + 1]) {
+					int temp;
+					temp =arr[j];
+					arr[j] = arr[j + 1];
+					arr[j + 1] = temp;
+				}
+			}
+		}
+		System.out.println(Arrays.toString(arr));
+		
+	}
+}
 7.********************************************************************************
 堆排序 和  归并排序  的思路
