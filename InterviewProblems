@@ -272,3 +272,64 @@ public class BubbleSort {
 }
 7.********************************************************************************
 堆排序 和  归并排序  的思路
+
+8.*************************************************************************
+public class Prob1 {
+	public static void main(String[] args) {
+		int a = 10;
+		int b = 10;
+		method(a,b);
+		/*
+		 * 题目：编写method方法，使得调用method后，仅打印出
+		 * a = 100, b = 200
+		 */
+		System.out.println("a=" + a);
+		System.out.println("b=" + b);
+	}
+	//答案：
+	//方法一：
+	
+	public static void method(int a, int b) {
+		a = 100;
+		b = 200;
+		System.out.println("a=" + a);
+		System.out.println("b=" + b);
+		System.exit(0);//强行退出程序
+	}
+	
+	//方法二：目前还没学，code还有问题
+	//重写 打印流
+	
+//workspace0522>>InterviewProb>>Prob1
+
+9.***************************************************
+ * @Description:定义一个int型的数组：
+ * int[] arr = new int[]{12,3,3,34,56,77,432};
+ * 让数组的每个位置上的值去除以首位置的元素，得到的结果，作为该位置上的新值。遍历新的数组。
+ 
+ Ans:
+ public class Prob2 {
+	public static void main(String[] args) {
+		int[] arr = new int[] {12,3,3,34,56,77,432};
+		//wrong answer
+//		for(int i = 0;i < arr.length;i++) {
+//			arr[i] = arr[i] / arr[0];
+//		}
+		//首先改变了首位置的值，之后的计算就都是除以1
+		
+		//right answer 1(best)
+		for(int i = arr.length - 1;i >= 0;i--) {
+			arr[i] = arr[i] / arr[0];
+		}
+		
+		//right answer 2
+//		int temp = arr[0];
+//		for(int i = 0;i < arr.length; i++) {
+//			arr[i] = arr[i] / temp;
+//		}
+		
+		System.out.println(Arrays.toString(arr));
+	}
+}
+
+//workspace0522>>InterviewProb>>Prob2
